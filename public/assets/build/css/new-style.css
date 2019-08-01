@@ -1,0 +1,132 @@
+
+/* Navigation */
+
+.nav-sm .container.body .col-md-3.left_col, .nav-sm .navbar.nav_title{
+    width: 90px;
+}
+
+.nav-sm .nav.side-menu > li{
+    display: flex;
+}
+
+.nav.child_menu > li > a, .nav.side-menu > li > a{
+	font-size: 12px;
+}
+
+.nav-sm .main_container .top_nav,
+.nav-sm .container.body .right_col,
+.nav-sm footer{
+    margin-left: 90px;
+}
+
+.side-menu.nav > li > a {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.nav-md .nav.side-menu > li > a i {
+	font-size: 18px;
+	width: 25px;
+}
+
+.nav-md .nav.side-menu li a span {
+	margin-left: 5px;
+	font-size: 14px;
+}
+
+.nav-sm .menu_section > ul {
+	margin-top: 0;
+}
+
+.nav-sm .nav.side-menu li {
+	border-bottom: 1px solid #E6E9ED;
+}
+
+.nav-sm .nav.side-menu li a {
+	display: inline-block;
+	font-size: 12px;
+	width: 100%;
+	margin-bottom: 0;
+	position: relative;
+}
+
+.nav-sm .nav.side-menu li a i.fa {
+	font-size: 22px !important;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.nav-md .nav.side-menu li.active a i.fa,
+.nav-md .nav.side-menu li.active a span,
+.nav-sm .nav.side-menu li.active-sm a i.fa,
+.nav-sm .nav.side-menu li.active-sm a span{
+    color: #0073EC;
+}
+
+.nav-sm .nav.side-menu li a span {
+	background: #ffffff;
+	box-shadow: 4px 0px 7px 0px rgba(182, 185, 189, 0.25);
+	transition: background-image 2s linear;
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	margin-left: 1px;
+	margin-top: -23px;
+	padding: 17px;
+	display: none;
+	width: 190px;
+}
+
+.nav-sm .nav.side-menu li.active a span{
+    display: inline-block;
+}
+
+.nav-sm .nav.side-menu li a span.fa {
+    margin-right: -65px;
+    display: none;
+    width: 10px;
+    font-size: 8px;
+    position: inherit;
+    margin-left: 0;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    height: 10px;
+    margin-top: 15px;
+}
+
+.nav-sm .nav.side-menu li:last-child{
+    border-bottom: none;
+}
+
+@keyframes sidemenuAnimation {
+  from {
+    opacity: 0;
+    transform: translate3d(30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
+.nav-sm .nav.side-menu li a:hover span{
+    animation-name: sidemenuAnimation;
+    -webkit-animation-duration: 0.25s;
+    -moz-animation-duration: 0.25s;
+    -ms-animation-duration: 0.25s;
+    -o-animation-duration: 0.25s;
+    animation-duration: 0.25s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.nav-sm .nav.side-menu li a:hover span,
+.nav-sm .nav.side-menu li.active a:hover span{
+    display: inline-block;
+    
+}
